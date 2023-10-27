@@ -78,7 +78,7 @@ The "Activate Module" is responsible for checking a specific local repository of
 ```python
 # Code for Activate Module
 [Activate](sumana-activate/main.py)
-
+```
 ### 2) Deactivate Module
 
 The "Deactivate Module" checks a GCS bucket for any flat files and downloads them to a specific path on the edge gateway. This module is configured to run as a batch job in the Linux crontab and is scheduled to execute once daily.
