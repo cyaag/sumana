@@ -29,6 +29,6 @@ for file in blob:
     # file.download_to_filename('/home/gautambh/var/tmp/sumana-web'+"/"+str(file).split(",")[1])
     print("End Reading one file from GCP")
     print("file name from GCP = ", str(file).split(",")[1])
-    file.download_to_filename('/home/gautambh/var/tmp/sumana/deactivate' + "/" + str(file).split(",")[1])
+    file.download_to_filename('/var/tmp/sumana-deactivate' + "/" + str(file).split(",")[1].strip(" "))
     print("finish downloading files from GCP")
 print("Finished processing all files")
