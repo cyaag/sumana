@@ -8,9 +8,9 @@ Before configuring the modules, you should setup the Google Cloud Project with t
 
 To interact with Google Cloud Storage, you'll need to set up credentials for your Google Cloud project:
 
-1) Create a Google Cloud project if you haven't already.
+- **Create a Google Cloud project if you haven't already**.
 
-    1.1) Go to the Google Cloud Console.
+    - Go to the Google Cloud Console.
 
     ** Click the project selector at the top of the page, and then click "New Project."
 
