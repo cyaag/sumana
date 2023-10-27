@@ -14,20 +14,20 @@ To interact with Google Cloud Storage, you'll need to set up credentials for you
 
     - Click the project selector at the top of the page, and then click "New Project."
 
-    - Enter a name for your project, and choose an organization if applicable. You can also            edit the project ID, which is a unique identifier for your project.
+    - Enter a name for your project, and choose an organization if applicable. You can also edit the project ID, which is a unique identifier for your project.
 
     - Click "Create" to create the project.
 
 
 - **Create a Google Cloud Storage bucket in your project to store the files.**
 
-    - In the Google Cloud Console, make sure you have selected your project from the project          selector.
+    - In the Google Cloud Console, make sure you have selected your project from the project selector.
 
     - In the left navigation pane, go to "Storage" > "Browser."
 
     - Click the "Create Bucket" button.
 
-    - Enter a globally unique name for your bucket, choose a default storage class, and               configure other bucket settings as needed.
+    - Enter a globally unique name for your bucket, choose a default storage class, and configure other bucket settings as needed.
 
     - Click "Create" to create the bucket.
    
@@ -43,17 +43,17 @@ To interact with Google Cloud Storage, you'll need to set up credentials for you
 
    - Click "Continue" to grant additional permissions if needed.
 
-   - Choose the option to create a key for the service account and select the key type (JSON         is commonly used).
+   - Choose the option to create a key for the service account and select the key type (JSON is commonly used).
 
-   - Click "Create" to create the service account and download the key file to your local            machine. 
+   - Click "Create" to create the service account and download the key file to your local machine. 
 
 - **Set IAM policies for the service account to allow it to read and write files in the storage bucket.**
 
-   - To allow the service account to read and write files in your Google Cloud Storage bucket,       you need to set up IAM policies:
+   - To allow the service account to read and write files in your Google Cloud Storage bucket, you need to set up IAM policies:
 
    - In the Google Cloud Console, go to "IAM & Admin" > "IAM."
 
-   - Find the member (service account) for which you want to set permissions. It will be             listed in the format <service-account-name>@<project-id>.iam.gserviceaccount.com.
+   - Find the member (service account) for which you want to set permissions. It will be listed in the format <service-account-name>@<project-id>.iam.gserviceaccount.com.
 
    - Click the member to open the permissions page.
 
@@ -64,6 +64,10 @@ To interact with Google Cloud Storage, you'll need to set up credentials for you
       For write access, you can use the role "Storage Object Admin."
 
    - Click "Save" to apply the IAM policies.
+
+For any additional information, please refer to the following link:
+
+[Google Cloud](https://cloud.google.com/storage/docs/creating-buckets)
 
 ## Edge Gateway Modules
 
