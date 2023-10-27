@@ -104,21 +104,22 @@ Before you can run Module 1 and 2 on your edge gateway, ensure that Python and p
 
 If Python is not already installed, you can download the latest version of Python for your platform from the [Python official website](https://www.python.org/downloads/).
 
-- For Linux (e.g., Ubuntu):
+    - For Linux (e.g., Ubuntu):
+  
   ```bash
   sudo apt-get update
   sudo apt-get install python3
-```
+  ```
 #### Install pip
 
   ```bash
   python -m ensurepip --default-pip
-```
+  ```
 ### Step 2: Install Dependencies
 
   ```bash
   pip install google-cloud-storage
-```
+  ```
 ### Step 3: Set Up Google Cloud Credentials
 
   ```bash
