@@ -104,7 +104,7 @@ Before you can run Module 1 and 2 on your edge gateway, ensure that Python and p
 
 If Python is not already installed, you can download the latest version of Python for your platform from the [Python official website](https://www.python.org/downloads/).
 
-    - For Linux (e.g., Ubuntu):
+- For Linux (e.g., Ubuntu):
   
   ```bash
   sudo apt-get update
