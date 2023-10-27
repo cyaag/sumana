@@ -74,19 +74,19 @@ For any additional information, please refer to the following link:
 ### 1) Activate Module
 
 The "Activate Module" is responsible for checking a specific local repository of an edge gateway and uploading flat files to a Google Cloud Storage (GCS) bucket. This module is configured to run as a batch job in the Linux crontab and is scheduled to execute once daily.
-
-```python
 # Code for Activate Module
+```python
 [Activate](sumana-activate/main.py)
 ```
 ### 2) Deactivate Module
 
 The "Deactivate Module" checks a GCS bucket for any flat files and downloads them to a specific path on the edge gateway. This module is configured to run as a batch job in the Linux crontab and is scheduled to execute once daily.
 
-```python
-# Code for Activate Module
-[Deactivate](sumana-deactivate/main.py)
 
+# Code for Activate Module
+```python
+[Deactivate](sumana-deactivate/main.py)
+```
 ### 2) UI Module
 
 The "UI Module" provides a basic user interface to manage, upload, download, and view the files stored in the Google Cloud Storage bucket.
@@ -109,22 +109,22 @@ If Python is not already installed, you can download the latest version of Pytho
   ```bash
   sudo apt-get update
   sudo apt-get install python3
-
+```
 #### Install pip
 
   ```bash
   python -m ensurepip --default-pip
-
+```
 ### Step 2: Install Dependencies
 
   ```bash
   pip install google-cloud-storage
-
+```
 ### Step 3: Set Up Google Cloud Credentials
 
   ```bash
   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/gcpkey.json"
-
+```
 ### Step 4: Configure Crontab
 
 Edit your crontab file to schedule Module 1 (Activate Module) to run daily at 11 PM & Module 2 (Deactivate Module) to run daily at 12 PM. Open the crontab configuration using the following command:
@@ -133,6 +133,6 @@ Edit your crontab file to schedule Module 1 (Activate Module) to run daily at 11
   crontab -e
   0 23 * * * /usr/bin/python3 /path/to/sumana-activate/main.py >> /var/log/activate_module.log 2>&1
   0 23 * * * /usr/bin/python3 /path/to/sumana-deactivate/main.py >> /var/log/activate_module.log 2>&1
-
+```
 * Replace /path/to/activate_module.py with the actual path to your Activate Module script.
 * The >> /var/log/activate_module.log 2>&1 part redirects the output to a log file.
