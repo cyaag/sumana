@@ -86,7 +86,7 @@ The "Deactivate Module" checks a GCS bucket for any flat files and downloads the
 
 [Deactivate](sumana-deactivate/main.py)
 
-### 2) UI Module
+### 3) UI Module
 
 The "UI Module" provides a basic user interface to manage, upload, download, and view the files stored in the Google Cloud Storage bucket.
 
