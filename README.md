@@ -57,7 +57,7 @@ To interact with Google Cloud Storage, you'll need to set up credentials for you
 
    - Click the member to open the permissions page.
 
-   ** Click the "Edit" button to add or edit roles.
+   - Click the "Edit" button to add or edit roles.
 
    - To allow read and write access, add the following roles to the service account:
       For read access, you can use the role "Storage Object Viewer."
