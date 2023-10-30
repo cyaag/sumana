@@ -115,7 +115,7 @@ If Python is not already installed, you can download the latest version of Pytho
   ```bash
   python -m ensurepip --default-pip
   ```
-### Step 2: Install Dependencies
+### Step 2: Install Cloud SDK
 
   ```bash
   pip install google-cloud-storage
@@ -124,7 +124,7 @@ If Python is not already installed, you can download the latest version of Pytho
 
   ```bash
   export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/gcpkey.json"
-```
+  ```
 ### Step 4: Configure Crontab
 
 Edit your crontab file to schedule Module 1 (Activate Module) to run daily at 11 PM & Module 2 (Deactivate Module) to run daily at 12 PM. Open the crontab configuration using the following command:
@@ -133,6 +133,6 @@ Edit your crontab file to schedule Module 1 (Activate Module) to run daily at 11
   crontab -e
   0 23 * * * /usr/bin/python3 /path/to/sumana-activate/main.py >> /var/log/activate_module.log 2>&1
   0 23 * * * /usr/bin/python3 /path/to/sumana-deactivate/main.py >> /var/log/activate_module.log 2>&1
-```
+  ```
 * Replace /path/to/activate_module.py with the actual path to your Activate Module script.
 * The >> /var/log/activate_module.log 2>&1 part redirects the output to a log file.
