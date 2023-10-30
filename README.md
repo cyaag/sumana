@@ -111,7 +111,7 @@ If Python is not already installed, you can download the latest version of Pytho
   ```bash
   python -m ensurepip --default-pip
   ```  
-### Step 2: Install Dependencies
+### Step 2: Install Cloud SDK
 
   ```bash
   pip install google-cloud-storage
